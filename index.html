@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>Sahran Fahmid (coryhec)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading curtain: covers the page, then slides up and away -->
+    <div class="curtain" aria-hidden="true">
+        <div class="loader-bar"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">coryhec</div>
+        <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero: intro on the left, glass plane with projects on the right -->
+    <header class="hero">
+        <div class="hero-inner">
+
+            <!-- LEFT: picture, heading, description, clock -->
+            <div class="hero-left">
+                <div class="avatar-wrap">
+                    <img class="avatar" src="profile.jpg" alt="Portrait of Sahran Fahmid">
+                </div>
+
+                <h1 class="intro-title">Hi, I'm Sahran <span class="name" tabindex="0">Fahmid<span class="handle" role="tooltip"> coryhec</span></span></h1>
+                <p class="intro-desc">I build software which speeds up time</p>
+
+                <!-- Revealed after the layout has moved to the left -->
+                <div class="reveal">
+                    <div class="reveal-inner">
+
+                        <!-- Student panel -->
+                        <div class="student-card">
+                            <p class="student-title">Currently studying for my A2s (CAIE)</p>
+                            <ul class="subjects">
+                                <li>Further Mathematics</li>
+                                <li>Chemistry</li>
+                                <li>Biology</li>
+                                <li>Physics</li>
+                                <li>Mathematics</li>
+                            </ul>
+                        </div>
+
+                        <!-- Hover (or tap) the clock to see the time difference from the visitor -->
+                        <div class="clock" tabindex="0" role="group" aria-label="Current time in Bangladesh">
+                            <span class="clock-dot" aria-hidden="true"></span>
+                            <span class="clock-time" id="bd-time">--:--:--</span>
+                            <span class="clock-label">
+                                <span class="place">Dhaka, Bangladesh</span>
+                                <span class="diff" id="bd-diff">Bangladesh time</span>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: glass plane -->
+            <div class="hero-right" id="work">
+                <section class="plane" aria-labelledby="projects-title">
+                    <h2 class="plane-title" id="projects-title">Projects</h2>
+
+                    <div class="panels">
+
+                        <!-- ===== Onix Client ===== -->
+                        <article class="panel" style="--tint: 20, 230, 210">
+                            <div class="panel-head">
+                                <span class="icon icon--contain" aria-hidden="true"><img src="onix.png" alt=""></span>
+                                <div class="panel-title">
+                                    <h3>Onix Client</h3>
+                                    <p class="role">Founder, now Community Lead &amp; Marketing Manager</p>
+                                </div>
+                                <a class="site" href="https://onixclient.com/" target="_blank" rel="noopener">
+                                    Website
+                                    <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <p class="blurb">One of the most popular Minecraft Bedrock clients. It started life as Plasmic Client.</p>
+                            <button class="more" type="button" aria-expanded="false" aria-controls="more-onix">
+                                <span class="more-label">Show more</span>
+                                <svg class="chev" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                            <div class="more-body" id="more-onix">
+                                <div class="more-inner">
+                                    <p>Founded at 14 as Plasmic Client (2021&ndash;2022) and grew to 10,000 Discord members in under a year, with YouTube creators earning around 100k views combined. It shut down in 2022, then was acquired and relaunched as Onix Client. Running it taught me that transparency and steady engagement are what keep a community together.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ===== Flarial Client ===== -->
+                        <article class="panel" style="--tint: 255, 92, 58">
+                            <div class="panel-head">
+                                <span class="icon" aria-hidden="true"><img src="flarial.png" alt=""></span>
+                                <div class="panel-title">
+                                    <h3>Flarial Client</h3>
+                                    <p class="role">Software Developer, initial launcher</p>
+                                </div>
+                                <a class="site" href="https://flarial.xyz/" target="_blank" rel="noopener">
+                                    Website
+                                    <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <p class="blurb">Internal MCBE PvP client with almost 500k users.</p>
+                            <button class="more" type="button" aria-expanded="false" aria-controls="more-flarial">
+                                <span class="more-label">Show more</span>
+                                <svg class="chev" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                            <div class="more-body" id="more-flarial">
+                                <div class="more-inner">
+                                    <p>Built the initial launcher and went on to maintain the official one. It handles game launching, DLL injection and update delivery.</p>
+                                    <div class="extra-links">
+                                        <a class="site" href="https://github.com/flarialmc/launcher" target="_blank" rel="noopener">Launcher on GitHub <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ===== Impulse/Synapse ===== -->
+                        <article class="panel" style="--tint: 120, 232, 110">
+                            <div class="panel-head">
+                                <span class="icon" aria-hidden="true"><img src="impulse.png" alt=""></span>
+                                <div class="panel-title">
+                                    <h3>Impulse/Synapse</h3>
+                                    <p class="role">Founder &amp; Lead Developer, 2021&ndash;2024</p>
+                                </div>
+                                <span class="site site-off">Private</span>
+                            </div>
+                            <p class="blurb">Ranked Bedrock PvP community (Bedwars &amp; Treasure Wars) that peaked at 5,000 members.</p>
+                            <button class="more" type="button" aria-expanded="false" aria-controls="more-impulse">
+                                <span class="more-label">Show more</span>
+                                <svg class="chev" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                            <div class="more-body" id="more-impulse">
+                                <div class="more-inner">
+                                    <p>Founded at 15 and ran for three years. I solo-coded the Discord bot behind it, Synapse Ranked Bot, covering ELO calculations, match logging, leaderboards and moderation. I also led the moderation team and ran community operations end to end. The bot is private.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ===== AutoQP ===== -->
+                        <article class="panel" style="--tint: 91, 140, 255">
+                            <div class="panel-head">
+                                <!-- ICON: swap the letter for <img src="autoqp.png" alt=""> -->
+                                <span class="icon" aria-hidden="true">A</span>
+                                <div class="panel-title">
+                                    <h3>AutoQP</h3>
+                                    <p class="role">Founder &amp; Software Developer</p>
+                                </div>
+                                <a class="site" href="/autoqp">
+                                    Website
+                                    <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <p class="blurb">Past paper downloader, statistics tracker and MCQ generator, now in beta with students.</p>
+                            <button class="more" type="button" aria-expanded="false" aria-controls="more-autoqp">
+                                <span class="more-label">Show more</span>
+                                <svg class="chev" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                            <div class="more-body" id="more-autoqp">
+                                <div class="more-inner">
+                                    <p>Downloads past papers automatically, tracks your statistics and generates MCQs. Students are testing it in beta.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ===== HiveConnect ===== -->
+                        <article class="panel" style="--tint: 251, 191, 36">
+                            <div class="panel-head">
+                                <!-- ICON: swap the letter for <img src="hiveconnect.png" alt=""> -->
+                                <span class="icon" aria-hidden="true">H</span>
+                                <div class="panel-title">
+                                    <h3>HiveConnect</h3>
+                                    <p class="role">Developer</p>
+                                </div>
+                                <a class="site" href="https://github.com/coryhec/HiveConnect" target="_blank" rel="noopener">
+                                    GitHub
+                                    <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <p class="blurb">Go bot for private competitive matchmaking on Hive, built on gophertunnel.</p>
+                            <button class="more" type="button" aria-expanded="false" aria-controls="more-hiveconnect">
+                                <span class="more-label">Show more</span>
+                                <svg class="chev" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                            <div class="more-body" id="more-hiveconnect">
+                                <div class="more-inner">
+                                    <p>Includes a packet system, a REST API and Discord bot integration. It&rsquo;s an unfinished learning project.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ===== Projectile Motion Simulator ===== -->
+                        <article class="panel" style="--tint: 127, 220, 240">
+                            <div class="panel-head">
+                                <span class="icon icon--contain" aria-hidden="true"><img src="projectile.png" alt=""></span>
+                                <div class="panel-title">
+                                    <h3>2D Projectile Motion Simulator</h3>
+                                    <p class="role">C# Developer</p>
+                                </div>
+                                <a class="site" href="https://github.com/coryhec/ProjectileMotionVisualiser" target="_blank" rel="noopener">
+                                    GitHub
+                                    <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <p class="blurb">A C# Windows Forms app that simulates projectile trajectories with configurable launch conditions and medium-dependent drag.</p>
+                            <button class="more" type="button" aria-expanded="false" aria-controls="more-projectile">
+                                <span class="more-label">Show more</span>
+                                <svg class="chev" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                            <div class="more-body" id="more-projectile">
+                                <div class="more-inner">
+                                    <p>Numerically simulates motion in air, water, or a vacuum, with quadratic drag. Set the initial speed, launch angle, mass, and sphere radius; animate the projectile, inspect coordinates along its path, and pan the trajectory graph.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Get in touch</h2>
+        <p>Say hello at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
